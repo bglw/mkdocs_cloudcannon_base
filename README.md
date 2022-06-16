@@ -32,19 +32,9 @@ In `_editables.content` we specify the toolbar options that editors will see in 
 
 ## Connecting the Site to CloudCannon
 
-*   When connecting this repository to CloudCannon, choose the `Other` option for your static site generator. When prompted for **Command Line Options**, use the following values:
+*   When connecting this repository to CloudCannon, choose the `MkDocs` option for your static site generator, the configuration does not need to be changed.
 
-    | field           | value                       |
-    |-----------------|-----------------------------|
-    | Install Command | pip install mkdocs-material |
-    | Build Command   | mkdocs build                |
-    | Output Path     | site                        |
-
-    > `mkdocs` is already installed on the CloudCannon build image, so the install command is only needed for our theme. If you removed `theme: material` from `mkdocs.yml`, you could leave the install field blank.
-
-    > `site` is the default directory that `mkdocs build` will use for its output.
-
-*   Additionally, check `Use the beta version of @cloudcannon/reader`. This provides the `[full_slug]` placeholder that we use in our `cloudcannon.config.yml`.
+    > Inside the `.cloudcannon/prebuild` file in this repository we install `mkdocs-material`, our theme.
 
 ## Done!
 

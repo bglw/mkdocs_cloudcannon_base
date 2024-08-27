@@ -1,6 +1,2 @@
-export PYTHONPATH="$(pwd)/python:$PYTHONPATH"
-pip install mkdocs-material --target "$(pwd)/python"
 
-ls -lh .
-echo $PYTHONPATH
-echo "huh"
+pip install mkdocs-material 

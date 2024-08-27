@@ -7,8 +7,11 @@ collections_config:
 
 # Where CloudCannon should put new files, and how it should build URLs
 paths:
-  uploads: "docs" # Put new files inside the docs folder
+  uploads: "[relative_base_path]/assets"
+  uploads_use_relative_path: true
   static: "docs" # Reference files in the docs folder as /<file>
+
+
 
 # The available buttons in the CloudCannon Content Editor
 _editables:

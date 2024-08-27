@@ -1,4 +1,4 @@
-export PYTHONPATH=python:$PYTHONPATH
+export PYTHONPATH="$(pwd)/python:$PYTHONPATH"
 pip install mkdocs-material
 
 ls -lh .
